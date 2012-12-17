@@ -1,0 +1,25 @@
+name:			markable-ioref
+version:		0.1
+cabal-version:		>= 1.2
+homepage:		https://github.com/adaszko/markable-ioref
+build-type:		Simple
+license:		BSD3
+license-file:		LICENSE
+author:			Adam Szkoda
+extra-source-files:	README.md LICENSE
+stability:		experimental
+bug-reports:		https://github.com/adaszko/markable-ioref/issues
+tested-with:		GHC == 7.4.2
+category:		Concurrency, Data Structures
+synopsis:		Haskell clone of Java's AtomicMarkableReference
+description:		A composite of IORef and Bool that can be modified atomically.
+			This is analogous to Java's AtomicMarkableReference.
+
+source-repository	head
+    type:		git
+    location:		git://github.com/adaszko/markable-ioref.git
+
+library
+    build-depends:	base
+    exposed-modules:	Control.Concurrent.MarkableIORef
+    ghc-options:	-threaded -rtsopts
