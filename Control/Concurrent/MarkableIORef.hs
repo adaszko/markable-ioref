@@ -1,4 +1,4 @@
-module Control.Concurrent.MarkableIORef ( 
+module Control.Concurrent.MarkableIORef (
   MarkableIORef,
   newMarkableRef,
   compareAndSet,
@@ -53,7 +53,7 @@ readMarkableRefMark :: MarkableIORef a -> IO (IORef a, Bool)
 readMarkableRefMark markableRef = do
   MarkedRef { ref = curRef, mark = curMark } <- readIORef markableRef
   return (curRef, curMark)
-  
+
 
 readMarkableRef :: MarkableIORef a -> IO (IORef a)
 readMarkableRef = fmap fst . readMarkableRefMark

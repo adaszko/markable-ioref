@@ -16,9 +16,9 @@ Installation
 
 Assuming you have GHC already installed:
 
-    $ runhaskell Setup.hs configure
-    $ runhaskell Setup.hs build
-    $ runhaskell Setup.hs install
+    $ cabal configure
+    $ cabal build
+    $ cabal install
 
 
 To Do
@@ -38,4 +38,4 @@ References
 ==========
 
 * Herlihy, Shavit: The Art of Multiprocessor Programming
-* [AtomicMarkableReference](http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html)
+* Java's [AtomicMarkableReference](http://docs.oracle.com/javase/1.5.0/docs/api/java/util/concurrent/atomic/AtomicMarkableReference.html)
