@@ -21,13 +21,6 @@ Assuming you have GHC already installed:
     $ cabal install
 
 
-To Do
-=====
-
-* Enable -Wall and clean warnings
-* Haddock documentation
-
-
 License
 =======
 

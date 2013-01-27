@@ -9,9 +9,6 @@ module Control.Concurrent.MarkableIORef (
   ) where
 
 
--- TODO: Try unboxed types
-
-
 import Data.IORef
 
 
@@ -20,8 +17,8 @@ type MarkableIORef a = IORef (MarkedRef a)
 
 
 newMarkableRef :: IORef a -> Bool -> IO (MarkableIORef a)
-newMarkableRef ref mark = do
-  newIORef $ MarkedRef { ref = ref, mark = mark }
+newMarkableRef ioref marked = do
+  newIORef $ MarkedRef { ref = ioref, mark = marked }
 
 
 casIORef :: Eq a => IORef a -> a -> a -> IO Bool
