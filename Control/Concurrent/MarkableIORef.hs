@@ -6,6 +6,7 @@ module Control.Concurrent.MarkableIORef (
   readMarkableRefMark,
   readMarkableRef,
   isMarked,
+  casIORef,
   ) where
 
 

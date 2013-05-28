@@ -1,5 +1,5 @@
 name:                   markable-ioref
-version:                0.1
+version:                0.2
 cabal-version:          >= 1.2
 homepage:               https://github.com/adaszko/markable-ioref
 build-type:             Simple
